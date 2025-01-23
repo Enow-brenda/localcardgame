@@ -24,13 +24,14 @@ class Deck:
         # this is to draw a card from the deck
         if self.cards:
             return self.cards.pop()
+
+
+    def refill(self,used_cards):
         self.cards = used_cards
         for card in self.cards:
             card.flip(face_up=False)
-        used_cards = []
         random.shuffle(self.cards)
         shuffle.play()
-        return self.cards.pop()
 
     def is_empty(self):
         return len(self.cards) == 0
