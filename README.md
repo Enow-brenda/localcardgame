@@ -1,6 +1,3 @@
-Got it! Here's a simpler and more focused `README.md` for your card game:  
-
----
 
 # 🃏 Local Cards Game
 
